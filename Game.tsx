@@ -74,6 +74,9 @@ const Game: React.FC<GameProps> = ({onMainMenuPress, player1, player2}) => {
       const valueA = board[Math.floor(a / 3)][a % 3];
       const valueB = board[Math.floor(b / 3)][b % 3];
       const valueC = board[Math.floor(c / 3)][c % 3];
+      // const valueA = board[a][a];
+      // const valueB = board[b][b];
+      // const valueC = board[c][c];
 
       if (valueA && valueA === valueB && valueA === valueC) {
         gameover = true;
